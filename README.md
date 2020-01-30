@@ -1,2 +1,2 @@
 # Excel-Java-Read
-This code permits to read a excel with java 
+This code permits to read an excel with java 
