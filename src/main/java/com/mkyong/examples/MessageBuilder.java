@@ -5,7 +5,7 @@ public class MessageBuilder {
     public String getMessage(String name) {
 
         StringBuilder result = new StringBuilder();
-
+        System.out.println("Prueba de codigo");
         if (name == null || name.trim().length() == 0) {
 
             result.append("Please provide a name!");
