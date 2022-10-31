@@ -9,12 +9,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-
 /**
  *
  * @author wilso
@@ -26,7 +20,7 @@ public class Excel {
             System.out.println("Prueba de codigo");
             ArrayList<String> dta = new ArrayList<>();
 
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
