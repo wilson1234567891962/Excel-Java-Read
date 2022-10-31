@@ -11,7 +11,7 @@ public class MessageBuilder {
             result.append("Please provide a name!");
 
         } else {
-
+            result.append("");
             result.append("Hello " + name);
             result.append("");
         }
