@@ -42,6 +42,8 @@ public class Excel {
                             case Cell.CELL_TYPE_NUMERIC:
                                 result.append(cell.getNumericCellValue());
                                 break;
+                            default:
+                                System.out.println("Corriendo lote");
                         }
                         result.append(":");
                     }
