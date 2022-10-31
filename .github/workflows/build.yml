@@ -29,6 +29,18 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+      - name: Code Coverage Report
+        uses: irongut/CodeCoverageSummary@v1.3.0
+        with:
+         filename: coverage/**/coverage.cobertura.xml
+         badge: true
+         fail_below_min: true
+         format: markdown
+         hide_branch_rate: false
+         hide_complexity: true
+         indicators: true
+         output: both
+         thresholds: '60 80'
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
