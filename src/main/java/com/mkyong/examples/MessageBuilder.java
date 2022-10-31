@@ -1,5 +1,5 @@
 package com.mkyong.examples;
-
+import java.util.concurrent.atomic.AtomicInteger;
 public class MessageBuilder {
 
     public String getMessage(String name) {
