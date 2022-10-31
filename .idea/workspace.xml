@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82249437-4d62-4a6b-a904-8cdcf2f19d5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkyong/examples/MessageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkyong/examples/MessageBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/MessageBuilder.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/MessageBuilder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/MessageBuilder.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/MessageBuilder.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/com.mkyong.examples/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mkyong.examples.TestMessageBuilder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mkyong.examples.TestMessageBuilder.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mkyong.examples.TestMessageBuilder.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mkyong.examples.TestMessageBuilder.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mkyong/examples/TestMessageBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mkyong/examples/TestMessageBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkyong/examples/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkyong/examples/MessageBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667250023623</updated>
-      <workItem from="1667250025505" duration="4464000" />
+      <workItem from="1667250025505" duration="4797000" />
     </task>
     <servers />
   </component>
