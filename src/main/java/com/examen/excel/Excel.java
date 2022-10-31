@@ -25,33 +25,6 @@ public class Excel {
         try {
             System.out.println("Prueba de codigo");
             ArrayList<String> dta = new ArrayList<>();
-            try (Workbook workbook = WorkbookFactory.create(new File("C:\\Users\\wilso\\OneDrive\\Documents\\NetBeansProjects\\Excel\\src\\resources/Employment.xlsx"))) {
-                Sheet firstSheet = workbook.getSheetAt(0);
-                Iterator<Row> iterator = firstSheet.iterator();
-                StringBuilder result;
-                while (iterator.hasNext()) {
-                    result = new StringBuilder();
-                    Row nextRow = iterator.next();
-                    Iterator<Cell> cellIterator = nextRow.cellIterator();
-                    while (cellIterator.hasNext()) {
-                        Cell cell = cellIterator.next();
-                        switch (cell.getCellType()) {
-                            case Cell.CELL_TYPE_STRING:
-                                result.append(cell.getStringCellValue());
-                                break;
-                            case Cell.CELL_TYPE_NUMERIC:
-                                result.append(cell.getNumericCellValue());
-                                break;
-                            default:
-                                System.out.println("Corriendo lote");
-                        }
-                        result.append(":");
-                    }
-                    dta.add(result.toString());
-                }
-                System.out.println("Resultado");
-                System.out.println(dta);
-            }
 
         } catch (Exception e) {
             e.printStackTrace();
