@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82249437-4d62-4a6b-a904-8cdcf2f19d5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkyong/examples/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkyong/examples/MessageBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667250023623</updated>
-      <workItem from="1667250025505" duration="4797000" />
+      <workItem from="1667250025505" duration="5633000" />
     </task>
     <servers />
   </component>
