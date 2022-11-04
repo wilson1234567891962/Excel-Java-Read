@@ -10,7 +10,9 @@ public class MessageBuilder {
             String a = "";
             AtomicInteger aInt1 = new AtomicInteger(0);
             AtomicInteger aInt2 = new AtomicInteger(0);
-            if (aInt1.equals(aInt2)) {
+            
+            
+            if (aInt1.get() == aInt2.get()) {
                 System.out.println("Inyecte bug");
             }
             StringBuilder result = new StringBuilder();
