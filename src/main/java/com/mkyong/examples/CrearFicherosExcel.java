@@ -63,7 +63,9 @@ public class CrearFicherosExcel {
         file = new File(rutaArchivo);
         try ( FileOutputStream fileOuS = new FileOutputStream(file)) {
             if (file.exists()) {// si el archivo existe se elimina
-                file.delete();
+                if (!file.delete()) {
+                   file.delete();
+                }
                 System.out.println("Archivo eliminado");
             }
             libro.write(fileOuS);
