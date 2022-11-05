@@ -18,7 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class CrearFicherosExcel {
-    private final static Logger logger = Logger.getLogger(CrearFicherosExcel.class);
+    private static final  Logger logger = Logger.getLogger(CrearFicherosExcel.class);
     private static final String VALUE_RANGE = "10.68";
     
     private static final String[][] DOCUMENT = new String[][]{
