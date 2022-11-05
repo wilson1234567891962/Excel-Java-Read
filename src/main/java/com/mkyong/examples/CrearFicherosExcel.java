@@ -72,7 +72,6 @@ public class CrearFicherosExcel {
                 }
                 libro.write(fileOuS);
                 fileOuS.flush();
-                fileOuS.close();
                 System.out.println("Archivo Creado");
 
             } catch (FileNotFoundException e) {
