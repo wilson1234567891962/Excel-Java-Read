@@ -2,32 +2,30 @@ package com.mkyong.examples;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class TestMessageBuilder {
+class TestMessageBuilder {
 
     @Test
     void testNameMkyong() {
-
         MessageBuilder obj = new MessageBuilder();
         assertEquals("Hello mkyong", obj.getMessage("mkyong"));
-
-    }
-
-    /*@Test
-    public void testNameEmpty() {
-
-        MessageBuilder obj = new MessageBuilder();
-        assertEquals("Please provide a name!", obj.getMessage(" "));
-
     }
 
     @Test
-    public void testNameNull() {
-
+    void testNameNull() {
         MessageBuilder obj = new MessageBuilder();
         assertEquals("Please provide a name!", obj.getMessage(null));
+    }
 
-    }*/
+    @Test
+    void readFile() {
+        LeerFicherosExcel obj = new LeerFicherosExcel();
+        obj.readFile();
+    }
 
+    @Test
+    void createFile() {
+        CrearFicherosExcel.createFile();
+    }
 }

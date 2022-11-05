@@ -4,7 +4,6 @@
  */
 package com.mkyong.examples;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.util.Iterator;
 
@@ -16,11 +15,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class LeerFicherosExcel {
 	private static final  Logger logger = Logger.getLogger(LeerFicherosExcel.class);
-	public static void main(String[] args) {
-		String nombreArchivo = "Inventario.xlsx";
-		String rutaArchivo = "C:\\Ficheros-Excel\\" + nombreArchivo;
+	public String readFile() {
+		String nombre = "Reporte Diario - copia.xlsx";
 
-		try (FileInputStream file = new FileInputStream(new File(rutaArchivo))) {
+		try (FileInputStream file = new FileInputStream(nombre)) {
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
 			XSSFSheet sheet = worbook.getSheetAt(0);
 			Iterator<Row> rowIterator = sheet.iterator();
@@ -42,5 +40,6 @@ public class LeerFicherosExcel {
 		} catch (Exception e) {
 			logger.error(e);
 		}
+		return nombre;
 	}
 }
