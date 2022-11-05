@@ -19,7 +19,6 @@ public class LeerFicherosExcel {
 	public static void main(String[] args) {
 		String nombreArchivo = "Inventario.xlsx";
 		String rutaArchivo = "C:\\Ficheros-Excel\\" + nombreArchivo;
-		String hoja = "Hoja1";
 
 		try (FileInputStream file = new FileInputStream(new File(rutaArchivo))) {
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
