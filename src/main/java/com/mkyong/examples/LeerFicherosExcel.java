@@ -22,30 +22,26 @@ public class LeerFicherosExcel {
 		String hoja = "Hoja1";
 
 		try (FileInputStream file = new FileInputStream(new File(rutaArchivo))) {
-			// leer archivo excel
 			XSSFWorkbook worbook = new XSSFWorkbook(file);
-			//obtener la hoja que se va leer
 			XSSFSheet sheet = worbook.getSheetAt(0);
-			//obtener todas las filas de la hoja excel
 			Iterator<Row> rowIterator = sheet.iterator();
 
 			Row row;
-			// se recorre cada fila hasta el final
+
 			while (rowIterator.hasNext()) {
 				row = rowIterator.next();
-				//se obtiene las celdas por fila
+
 				Iterator<Cell> cellIterator = row.cellIterator();
 				Cell cell;
-				//se recorre cada celda
+
 				while (cellIterator.hasNext()) {
-					// se obtiene la celda en específico y se la imprime
+
 					cell = cellIterator.next();
-					System.out.print(cell.getStringCellValue()+" | ");
+					logger.info(cell.getStringCellValue()+" | ");
 				}
-				System.out.println();
 			}
 		} catch (Exception e) {
-			e.getMessage();
+			logger.error(e);
 		}
 	}
 }

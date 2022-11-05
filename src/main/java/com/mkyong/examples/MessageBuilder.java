@@ -30,7 +30,7 @@ public class MessageBuilder {
             }
             return result.toString();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error(e);
         }
         return null;
     }
