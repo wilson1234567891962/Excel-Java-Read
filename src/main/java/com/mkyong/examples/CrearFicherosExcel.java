@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -17,8 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class CrearFicherosExcel {
-
-    //contenido de la hoja de excel
+    final static Logger logger = Logger.getLogger(CrearFicherosExcel.class);
     private static final String VALUE_RANGE = "10.68";
     
     private static final String[][] DOCUMENT = new String[][]{
@@ -66,7 +66,7 @@ public class CrearFicherosExcel {
         try ( FileOutputStream fileOuS = new FileOutputStream(file)) {
             if (file.exists()) {
                 if (!file.delete()) {
-                    System.out.println("Archivo eliminado");
+                    logger.info("Archivo eliminado");
                 }
 
             }

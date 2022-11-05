@@ -1,9 +1,11 @@
 package com.mkyong.examples;
 
+import org.apache.log4j.Logger;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MessageBuilder {
-
+    final static Logger logger = Logger.getLogger(MessageBuilder.class);
     public String getMessage(String name) {
 
         try {
