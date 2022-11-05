@@ -37,26 +37,22 @@ public class CrearFicherosExcel {
 
         try (XSSFWorkbook libro = new XSSFWorkbook()) {
             XSSFSheet hoja1 = libro.createSheet(hoja);
-            //cabecera de la hoja de excel
             String[] header = new String[]{"Código", "Producto", "Precio", "Unidades"};
-
-            //poner negrita a la cabecera
             CellStyle style = libro.createCellStyle();
             Font font = libro.createFont();
             font.setBold(true);
             style.setFont(font);
 
-            //generar los datos para el documento
             for (int i = 0; i <= DOCUMENT.length; i++) {
                 XSSFRow row = hoja1.createRow(i);//se crea las filas
                 for (int j = 0; j < header.length; j++) {
-                    if (i == 0) {//para la cabecera
-                        XSSFCell cell = row.createCell(j);//se crea las celdas para la cabecera, junto con la posición
-                        cell.setCellStyle(style); // se añade el style crea anteriormente
-                        cell.setCellValue(header[j]);//se añade el contenido
-                    } else {//para el contenido
-                        XSSFCell cell = row.createCell(j);//se crea las celdas para la contenido, junto con la posición
-                        cell.setCellValue(DOCUMENT[i - 1][j]); //se añade el contenido
+                    if (i == 0) {
+                        XSSFCell cell = row.createCell(j);
+                        cell.setCellStyle(style);
+                        cell.setCellValue(header[j]);
+                    } else {
+                        XSSFCell cell = row.createCell(j);
+                        cell.setCellValue(DOCUMENT[i - 1][j]);
                     }
                 }
             }
@@ -72,15 +68,15 @@ public class CrearFicherosExcel {
                 }
                 libro.write(fileOuS);
                 fileOuS.flush();
-                System.out.println("Archivo Creado");
+                logger.info("Archivo Creado");
 
             } catch (FileNotFoundException e) {
-                e.printStackTrace();
+                logger.error(e);
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.error(e);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
 
     }
