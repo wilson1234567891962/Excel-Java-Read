@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class LeerFicherosExcel {
-	final static Logger logger = Logger.getLogger(LeerFicherosExcel.class);
+	private final static Logger logger = Logger.getLogger(LeerFicherosExcel.class);
 	public static void main(String[] args) {
 		String nombreArchivo = "Inventario.xlsx";
 		String rutaArchivo = "C:\\Ficheros-Excel\\" + nombreArchivo;
