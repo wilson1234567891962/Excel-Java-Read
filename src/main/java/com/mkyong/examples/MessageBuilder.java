@@ -6,6 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class MessageBuilder {
     private static final  Logger logger = Logger.getLogger(MessageBuilder.class);
+
     public String getMessage(String name) {
 
         try {
@@ -14,7 +15,7 @@ public class MessageBuilder {
             
             
             if (aInt1.get() == aInt2.get()) {
-                System.out.println("Inyecte bug");
+                logger.info("Inyecte bug");
             }
             StringBuilder result = new StringBuilder();
 

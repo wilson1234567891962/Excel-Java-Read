@@ -29,10 +29,9 @@ public class CrearFicherosExcel {
         {"TR0", "DE RED TPLINK TL-WN881ND 300Mpbs Wire-N PCI-Exp.", VALUE_RANGE, "14"}
     };
 
-    public static void main(String[] args) {
+    public static  void createFile() {
 
-        String nombreArchivo = "Inventario.xlsx";
-        String rutaArchivo = "C:\\Ficheros-Excel\\" + nombreArchivo;
+        String nombre = "Reporte Diario - copia.xlsx";
         String hoja = "Hoja1";
 
         try (XSSFWorkbook libro = new XSSFWorkbook()) {
@@ -44,34 +43,24 @@ public class CrearFicherosExcel {
             style.setFont(font);
 
             for (int i = 0; i <= DOCUMENT.length; i++) {
-                XSSFRow row = hoja1.createRow(i);//se crea las filas
+                XSSFRow row = hoja1.createRow(i);
                 for (int j = 0; j < header.length; j++) {
+                    XSSFCell cell = row.createCell(j);
                     if (i == 0) {
-                        XSSFCell cell = row.createCell(j);
                         cell.setCellStyle(style);
                         cell.setCellValue(header[j]);
                     } else {
-                        XSSFCell cell = row.createCell(j);
                         cell.setCellValue(DOCUMENT[i - 1][j]);
                     }
                 }
             }
 
             File file;
-            file = new File(rutaArchivo);
+            file = new File(nombre);
             try (FileOutputStream fileOuS = new FileOutputStream(file)) {
-                if (file.exists()) {
-                    if (!file.delete()) {
-                        logger.info("Archivo eliminado");
-                    }
-
-                }
                 libro.write(fileOuS);
                 fileOuS.flush();
                 logger.info("Archivo Creado");
-
-            } catch (FileNotFoundException e) {
-                logger.error(e);
             } catch (IOException e) {
                 logger.error(e);
             }
